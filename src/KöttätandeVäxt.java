@@ -38,6 +38,11 @@ public class KöttätandeVäxt extends Växt implements Vattnas {
         double fluidAmount = this.height*0.2+0.1;
         return this.fluidAmount;
     }
+    @Override
+    public String needOfFluid() {
+        return null;
+    }
+
 }
 
 

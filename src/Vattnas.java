@@ -1,6 +1,6 @@
 public interface Vattnas {
 
-    String needOfFluid();
+    public String needOfFluid();
 
 
 
