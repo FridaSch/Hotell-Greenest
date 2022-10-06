@@ -3,7 +3,7 @@ public class KöttätandeVäxt extends Växt implements Vattnas {
     private String name;
     private String fluidType = "Proteidryck";
     private double height;
-    private double fluidAmount;
+    private double fluidAmount;                 //Inkapsling
     public KöttätandeVäxt() {}
 
     public KöttätandeVäxt(String name, String fluidType, double height, double fluidAmount) {
@@ -11,7 +11,7 @@ public class KöttätandeVäxt extends Växt implements Vattnas {
         this.name = name;
         this.fluidType = fluidType;
         this.height = height;
-        this.fluidAmount = fluidAmount;
+        this.fluidAmount = fluidAmount;                 //Konstruktor
     }
     public void SetName(String name) {
         this.name = name;

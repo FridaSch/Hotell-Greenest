@@ -3,9 +3,8 @@ public class Kaktus extends Växt implements Vattnas {
     private String name;
     private String fluidType = "Mineralvatten";
     private double height;
-    private double fluidAmount=0.2;
+    private double fluidAmount=0.2;             //Inkapsling
 
-    //Inkapsling
     public Kaktus() {
     }
     public Kaktus(String name, String fluidType, double height, double fluidAmount) {
@@ -13,7 +12,7 @@ public class Kaktus extends Växt implements Vattnas {
         this.name = name;
         this.fluidType = fluidType;
         this.height = height;
-        this.fluidAmount = fluidAmount;           //Konstruktor
+        this.fluidAmount = fluidAmount;                 //Konstruktor
     }
     public void SetName(String name) {
         this.name = name;

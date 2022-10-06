@@ -3,16 +3,18 @@ public class Palm extends Växt implements Vattnas {
     private String name;
     private String fluidType = "Kranvatten";
     private double height;
-    private double fluidAmount;
-    public Palm() {
-    }
+    private double fluidAmount;                 //Inkapsling
+
+    public Palm() {}
+
     public Palm(String name, String fluidType, double height, double fluidAmount) {
         super(name, fluidType, height, fluidAmount);
         this.name = name;
         this.fluidType = fluidType;
         this.height = height;
-        this.fluidAmount = fluidAmount;
+        this.fluidAmount = fluidAmount;                  //Konstruktor
     }
+
     public void SetName(String name) {
         this.name = name;
     }
@@ -36,7 +38,7 @@ public class Palm extends Växt implements Vattnas {
     }
     public double GetFluidAmount() {
         double fluidAmount = this.height * 0.5;
-        return fluidAmount;
+        return this.fluidAmount;
     }
     @Override
     public boolean needOfFluid(boolean b) {
