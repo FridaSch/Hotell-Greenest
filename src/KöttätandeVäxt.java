@@ -39,8 +39,8 @@ public class KöttätandeVäxt extends Växt implements Vattnas {
         return this.fluidAmount;
     }
     @Override
-    public String needOfFluid() {
-        return null;
+    public boolean needOfFluid(boolean b) {
+        return true;
     }
 
 }

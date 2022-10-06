@@ -39,8 +39,8 @@ public class Palm extends Växt implements Vattnas {
         return fluidAmount;
     }
     @Override
-    public String needOfFluid() {
-        return null;
+    public boolean needOfFluid(boolean b) {
+        return true;
     }
 }
 

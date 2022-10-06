@@ -1,5 +1,4 @@
 public interface Vattnas {
 
-    public String needOfFluid();
-
+    boolean needOfFluid(boolean b);
 }

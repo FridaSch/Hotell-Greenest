@@ -8,6 +8,7 @@ public abstract class Huvudprogram implements Vattnas {
         double height;
         String fluidType;
         double fluidAmount;
+        boolean needOfFluid;
 
         Växt Igge = new Kaktus();
         Växt Laura = new Palm();
@@ -50,7 +51,6 @@ public abstract class Huvudprogram implements Vattnas {
         fluidType = Meatloaf.GetFluidType();
         fluidAmount = Meatloaf.GetFluidAmount();
         //Polymorfism
-
 
         String VäxtAttMata = showInputDialog("Skriv in namnet på den växt som ska matas: ");
         switch (VäxtAttMata) {

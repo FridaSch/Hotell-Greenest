@@ -3,7 +3,7 @@ public class Kaktus extends Växt implements Vattnas {
     private String name;
     private String fluidType = "Mineralvatten";
     private double height;
-    private double fluidAmount;
+    private double fluidAmount=0.2;
 
     //Inkapsling
     public Kaktus() {
@@ -41,7 +41,7 @@ public class Kaktus extends Växt implements Vattnas {
         return this.fluidAmount;
     }
     @Override
-    public String needOfFluid() {
-        return null;
+    public boolean needOfFluid(boolean b) {
+      return true;
     }
 }

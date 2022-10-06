@@ -1,4 +1,4 @@
-public class Växt implements Vattnas{
+public abstract class Växt implements Vattnas{
     protected String name;
     protected String fluidType;
     protected double height;
@@ -33,8 +33,10 @@ public class Växt implements Vattnas{
         return this.fluidAmount;
     }
     @Override
-    public String needOfFluid(){
-        return null;
+    public abstract boolean needOfFluid(boolean b);
+
+
+
     }
-}
+
 
