@@ -1,7 +1,6 @@
 import javax.swing.*;
 
 import static javax.swing.JOptionPane.*;
-
 public abstract class Huvudprogram implements Vattnas {
     public static void main(String[] args) {
 
@@ -9,7 +8,6 @@ public abstract class Huvudprogram implements Vattnas {
         double height;
         String fluidType;
         double fluidAmount;
-
 
         Växt Igge = new Kaktus();
         Växt Laura = new Palm();
@@ -57,7 +55,6 @@ public abstract class Huvudprogram implements Vattnas {
         String VäxtAttMata = showInputDialog("Skriv in namnet på den växt som ska matas: ");
         switch (VäxtAttMata) {
             case "Igge":
-
                 JOptionPane.showMessageDialog(null, Igge.GetName() + " behöver "
                         + Igge.GetFluidAmount() + " liter " + Igge.GetFluidType());
                 break;
@@ -77,8 +74,8 @@ public abstract class Huvudprogram implements Vattnas {
                         + Meatloaf.GetFluidAmount() + " liter " + Meatloaf.GetFluidType());
                 break;
 
-
+            default:
+                JOptionPane.showMessageDialog(null, "Fel namn inmatat.");
         }
     }
 }
-

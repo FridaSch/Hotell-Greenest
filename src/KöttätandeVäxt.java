@@ -1,7 +1,7 @@
 public class KöttätandeVäxt extends Växt implements Vattnas {
 
     private String name;
-    private String fluidType = "Proteindryck";
+    private String fluidType = "Proteidryck";
     private double height;
     private double fluidAmount;
     public KöttätandeVäxt() {}

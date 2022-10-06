@@ -33,7 +33,7 @@ public class Växt implements Vattnas{
         return this.fluidAmount;
     }
     @Override
-    public String needOfFluid() {
+    public String needOfFluid(){
         return null;
     }
 }
